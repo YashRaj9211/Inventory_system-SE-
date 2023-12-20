@@ -1,7 +1,3 @@
-Certainly! Below is a template for a `README.md` file for your Inventory Management System project. You can adjust the content to fit your project's specifics and any additional information you might want to include.
-
----
-
 # Inventory Management System
 
 ## Description
