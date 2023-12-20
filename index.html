@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inventory Management System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Inventory Management System</h2>
+    <div id="totalPriceSection">
+      <h3>Total Inventory Price: <span id="totalPrice">0</span></h3>
+    </div>
+    <form id="productForm">
+      <input type="text" id="productName" placeholder="Product Name" required />
+      <input
+        type="number"
+        id="productQuantity"
+        placeholder="Quantity"
+        required
+      />
+      <input type="number" id="productPrice" placeholder="Price" required />
+      <input
+        type="date"
+        id="productExpiry"
+        placeholder="Expiry Date"
+        required
+      />
+      <button type="submit">Add Product</button>
+    </form>
+
+    <div class="tables">
+      <div class="table">
+        <h2>Inventory Overview</h2>
+        <table id="inventoryTable">
+          <thead>
+            <tr>
+              <th>Product Name</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>Expiry Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Product rows will go here -->
+          </tbody>
+        </table>
+      </div>
+      <div class="table">
+        <h2>Product Expiry Information</h2>
+        <table id="expiryTable">
+          <thead>
+            <tr>
+              <th>Product Name</th>
+              <th>Expiry Date</th>
+              <th>Days Until Expiry</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Expiry rows will go here -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <h2>Inventory Value Over the Last Week</h2>
+    <canvas id="inventoryChart"></canvas>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </body>
+</html>
